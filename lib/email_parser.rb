@@ -12,6 +12,7 @@ class EmailParser
     
     def parse 
         email_list = @@data.split(/,\s|\s|,/)
+        email_list.uniq
     end 
     
     def email_list
