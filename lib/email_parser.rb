@@ -11,7 +11,7 @@ class EmailParser
     end 
     
     def parse 
-        email_list = @@data.split(/[\s\,\,s]/)
+        email_list = @@data.split(/[\s\,]/)
     end 
     
     def email_list
