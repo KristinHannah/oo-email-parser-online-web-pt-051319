@@ -12,7 +12,7 @@ class EmailParser
     
     def parse 
       if @@data.include?(", ")
-        email_list = @@data.split(", ")
+        email_list = @@data.split(\,|\s|\,\s)
       else 
         email_list = @@data.split(" ")
       end 
